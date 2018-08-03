@@ -1,0 +1,11 @@
+$(document).ready(function() {
+  $('#R1_C1').click(function() {})
+  $('#R1_C2').click(function() {})
+  $('#R1_C3').click(function() {})
+  $('#R2_C1').click(function() {})
+  $('#R2_C2').click(function() {})
+  $('#R2_C3').click(function() {})
+  $('#R3_C1').click(function() {})
+  $('#R3_C2').click(function() {})
+  $('#R3_C3').click(function() {})
+})
