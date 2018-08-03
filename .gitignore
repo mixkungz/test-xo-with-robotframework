@@ -1,4 +1,4 @@
-./log.html
-./output.xml
-./report.html
+./atdd/ui/log.html
+./atdd/ui/output.xml
+./atdd/ui/report.html
 /build/
