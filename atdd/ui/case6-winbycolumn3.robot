@@ -2,7 +2,7 @@
 Library    Selenium2Library
 
 *** Variables ***
-${URL}     http://localhost:8888/handsomevolk/index.jsp
+${URL}    https://localhost:8080/test-xo-with-robotframework/index.jsp
 ${Browser}    chrome
 
 *** Test Cases ***
