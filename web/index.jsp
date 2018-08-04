@@ -28,7 +28,7 @@
                 </div>
                 <div class="row my-5">
                     <div class="col">
-                        <table class="table text-center myTable">
+                        <table id="game-board" class="table text-center">
                             <tr>
                                 <td id="R1_C1"></td>
                                 <td id="R1_C2"></td>
