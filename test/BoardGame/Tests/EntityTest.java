@@ -41,7 +41,9 @@ public class EntityTest {
     @Test
     public void CreateBoard(){
         BoardXO board = new BoardXO();
-        assertNotNull(board);
+        String[][] expBoard = new String [3][3];
+//        assertNotNull(board);
+        assertEquals(expBoard, board.createBoard());
     }
     
     @Test 

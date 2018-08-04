@@ -10,8 +10,9 @@ package BoardGame.Models;
  * @author Rei
  */
 public class BoardXO {
-    int[][] Board;
+    String[][] board;
     int p1Score;
+    
 
     public int getP1Score() {
         return p1Score;
@@ -39,7 +40,14 @@ public class BoardXO {
         turn = 0;
     }
     public Object[] getBoard() {
-        return Board; //To change body of generated methods, choose Tools | Templates.
+        return board; //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public String[][] createBoard() {
+        turn = 0;
+        String[][] newBoard = new String[3][3];
+        this.board = newBoard;
+        return board;
     }
     
 }
