@@ -1,5 +1,6 @@
 nbproject/private/private.properties
-nbproject/private/private.xml
+nbproject/private/private.
+nbproject/genfiles.properties
 build/
 
 ./atdd/ui/log.html
