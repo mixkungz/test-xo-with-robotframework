@@ -31,6 +31,11 @@ public class GameServlet extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         BoardXO board = new BoardXO();
+        System.out.println("hi boardXO");
+        String position = request.getParameter("position");
+        if(position != null){
+            System.out.println(position);
+        }
         getServletContext().getRequestDispatcher("/index.jsp").forward(request, response);
     }
 
