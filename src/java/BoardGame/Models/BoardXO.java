@@ -18,14 +18,17 @@ public class BoardXO {
     int tieScore;
     int turn;
     public int getP1Score() {
-        return p1Sc
-
+        return p1Score;
+                }
     public int getTurn() {
         return turn;
     }
     
     public BoardXO(){
-        ore;
+       this.p1Score=0;
+       this.p2Score=0;
+       this.tieScore=0;
+       this.turn=0;
     }
 
     public int getP2Score() {
@@ -35,11 +38,8 @@ public class BoardXO {
     public int getTieScore() {
         return tieScore;
     }
-        this.p1Score=0;
-        this.p2Score=0;
-        this.tieScore=0;
-        turn = 0;
-    }
+       
+    
     
     public Object[] getBoard() {
         return board; 
@@ -77,7 +77,7 @@ public class BoardXO {
             }
         }
         return isWin;
-        return board; //To change body of generated methods, choose Tools | Templates.
+        
     }
 
     public String[][] createBoard() {
@@ -98,5 +98,12 @@ public class BoardXO {
         
         return playerSelect;
     }
+
+    public void setBoard(String[][] board) {
+        this.board = board;
+    }
     
+    public boolean checkTurn(){
+        return (this.turn>=5);
+    }
 }
