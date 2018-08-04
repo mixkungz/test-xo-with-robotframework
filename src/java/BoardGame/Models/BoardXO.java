@@ -106,4 +106,19 @@ public class BoardXO {
     public boolean checkTurn(){
         return (this.turn>=5);
     }
+    
+    
+    public boolean boxIsEmpty(HashMap playerSelect){
+        int row = Integer.parseInt((String) playerSelect.get("row"));
+        int column = Integer.parseInt((String) playerSelect.get("column"));
+//        System.out.println("box "+row);
+//        System.out.println("box "+column);
+        Boolean result = false;
+//        System.out.println("borad "+ board[row][column]);
+//        System.out.println(board);
+        if(board[row][column] == null){
+            result = true;
+        }
+        return result;
+    }
 }

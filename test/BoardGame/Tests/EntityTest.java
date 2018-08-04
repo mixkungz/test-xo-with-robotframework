@@ -63,4 +63,14 @@ public class EntityTest {
         String col = "2";
         assertTrue(!board.selectPositionToPlay(row, col).values().isEmpty());
     }
+    
+    @Test
+    public void boxEmptyTest(){
+        BoardXO board = new BoardXO();
+        String[][] x = new String[3][3];
+        x[1][0] = "x";
+        board.setBoard(x);
+        assertTrue("it not empty",board.boxIsEmpty(board.selectPositionToPlay("1","1"))); 
+    }
+
 }
