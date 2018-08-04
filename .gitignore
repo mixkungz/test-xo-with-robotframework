@@ -1,6 +1,6 @@
 nbproject/private/private.properties
 nbproject/private/private.xml
-build/
+/build/*
 
 ./atdd/ui/log.html
 ./atdd/ui/output.xml
