@@ -10,9 +10,11 @@ package BoardGame.Models;
  * @author Rei
  */
 public class BoardXO {
-    int[][] Board;
+    String[][] board;
     int p1Score;
-
+    int p2Score;
+    int tieScore;
+    int turn;
     public int getP1Score() {
         return p1Score;
     }
@@ -28,9 +30,7 @@ public class BoardXO {
     public int getTurn() {
         return turn;
     }
-    int p2Score;
-    int tieScore;
-    int turn;
+    
     public BoardXO(){
         
         this.p1Score=0;
@@ -38,8 +38,26 @@ public class BoardXO {
         this.tieScore=0;
         turn = 0;
     }
+    
     public Object[] getBoard() {
-        return Board; //To change body of generated methods, choose Tools | Templates.
+        return board; 
+    }
+
+    public boolean checkColumn(int col,String symbol) {
+        int num =col==2?1:col++;
+        boolean isWin = false;
+        for(int row=0;row<3;row++){
+            
+            if(board[row][col]==null){
+                break;
+            }
+            if((board[0][col].equals(board[1][col]))&& (board[2][col].equals(board[1][col]))&& (board[0][col].equals(board[2][col]))){
+                isWin = true;
+            } else {
+                break;
+            }
+        }
+        return isWin;
     }
     
 }
