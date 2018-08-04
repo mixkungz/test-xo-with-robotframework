@@ -5,6 +5,8 @@
  */
 package BoardGame.Models;
 
+import java.util.HashMap;
+
 /**
  *
  * @author Rei
@@ -12,7 +14,10 @@ package BoardGame.Models;
 public class BoardXO {
     int[][] Board;
     int p1Score;
-
+    int p2Score;
+    int tieScore;
+    int turn;
+    
     public int getP1Score() {
         return p1Score;
     }
@@ -28,9 +33,7 @@ public class BoardXO {
     public int getTurn() {
         return turn;
     }
-    int p2Score;
-    int tieScore;
-    int turn;
+    
     public BoardXO(){
         
         this.p1Score=0;
@@ -40,6 +43,19 @@ public class BoardXO {
     }
     public Object[] getBoard() {
         return Board; //To change body of generated methods, choose Tools | Templates.
+    }
+    
+    public HashMap selectPositionToPlay(String row, String column){
+        HashMap<String,String> playerSelect = new HashMap<>();
+        playerSelect.put("row", row);
+        playerSelect.put("column", column);
+        if(turn % 2 == 0){
+            playerSelect.put("symbol", "x");
+        }else{
+            playerSelect.put("symbol", "o");
+        }
+        
+        return playerSelect;
     }
     
 }

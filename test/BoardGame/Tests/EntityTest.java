@@ -6,6 +6,8 @@
 package BoardGame.Tests;
 
 import BoardGame.Models.BoardXO;
+import java.util.HashMap;
+import javafx.print.Collation;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -50,5 +52,13 @@ public class EntityTest {
         assertEquals(0, board.getP1Score());
         assertEquals(0,board.getP2Score());
         assertEquals(0,board.getTieScore());
+    }
+    
+    @Test 
+    public void selectPositionToPlayTest(){
+        BoardXO board = new BoardXO();
+        String row = "0";
+        String col = "2";
+        assertTrue(!board.selectPositionToPlay(row, col).values().isEmpty());
     }
 }
