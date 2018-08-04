@@ -2,9 +2,6 @@
 ./atdd/ui/output.xml
 ./atdd/ui/report.html
 
-nbproject/private/
-build/
-nbbuild/
-dist/
-nbdist/
-.nb-gradle/
+nbproject/private/private.properties
+nbproject/private/private.xml
+/build/
