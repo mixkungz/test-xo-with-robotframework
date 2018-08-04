@@ -44,7 +44,6 @@ public class BoardXO {
     }
 
     public String[][] createBoard() {
-        turn = 0;
         String[][] newBoard = new String[3][3];
         this.board = newBoard;
         return board;
