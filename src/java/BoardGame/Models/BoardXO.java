@@ -11,7 +11,7 @@ package BoardGame.Models;
  */
 public class BoardXO {
     String[][] board;
-    int p1Score;
+    int p1Score;    
     int p2Score;
     int tieScore;
     int turn;
@@ -52,6 +52,23 @@ public class BoardXO {
                 break;
             }
             if((board[0][col].equals(board[1][col]))&& (board[2][col].equals(board[1][col]))&& (board[0][col].equals(board[2][col]))){
+                isWin = true;
+            } else {
+                break;
+            }
+        }
+        return isWin;
+    }
+    
+    public boolean checkRow(int row,String symbol) {
+        int num =row==2?1:row++;
+        boolean isWin = false;
+        for(int col=0;col<3;col++){
+            
+            if(board[row][col]==null){
+                break;
+            }
+            if((board[row][0].equals(board[row][1]))&& (board[row][2].equals(board[row][1]))&& (board[row][0].equals(board[row][2]))){
                 isWin = true;
             } else {
                 break;
