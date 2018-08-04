@@ -28,23 +28,26 @@
                 </div>
                 <div class="row my-5">
                     <div class="col">
-                        <table id="game-board" class="table text-center">
-                            <tr>
-                                <td id="R1_C1"></td>
-                                <td id="R1_C2"></td>
-                                <td id="R1_C3"></td>
-                            </tr>
-                            <tr>
-                                <td id="R2_C1"></td>
-                                <td id="R2_C2"></td>
-                                <td id="R2_C3"></td>
-                            </tr>
-                            <tr>
-                                <td id="R3_C1"></td>
-                                <td id="R3_C2"></td>
-                                <td id="R3_C3"></td>
-                            </tr>
-                        </table>
+                        <form id="gameForm" method="post" action="https://www.w3schools.com/action_page.php">
+                            <table id="game-board" class="table text-center">
+                                <tr>
+                                    <td id="R1_C1"></td>
+                                    <td id="R1_C2"></td>
+                                    <td id="R1_C3"></td>
+                                </tr>
+                                <tr>
+                                    <td id="R2_C1"></td>
+                                    <td id="R2_C2"></td>
+                                    <td id="R2_C3"></td>
+                                </tr>
+                                <tr>
+                                    <td id="R3_C1"></td>
+                                    <td id="R3_C2"></td>
+                                    <td id="R3_C3"></td>
+                                </tr>
+                            </table>
+                            <input id="sendPosition" name="position" type="hidden" />
+                        </form>
                     </div>
                 </div>
                 <div class="row">

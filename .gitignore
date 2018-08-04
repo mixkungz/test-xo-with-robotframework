@@ -1,1 +1,7 @@
-/dist/
+nbproject/private/private.properties
+nbproject/private/private.xml
+build/
+
+./atdd/ui/log.html
+./atdd/ui/output.xml
+./atdd/ui/report.html
