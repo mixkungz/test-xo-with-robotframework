@@ -5,3 +5,4 @@ build/
 ./atdd/ui/log.html
 ./atdd/ui/output.xml
 ./atdd/ui/report.html
+/dist/
